@@ -15,6 +15,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('deposit')" :active="request()->routeIs('deposit') || request()->routeIs('deposit.save')">
+                        {{ __('Deposit') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('withdraw')" :active="request()->routeIs('withdraw') || request()->routeIs('withdraw.save')">
+                        {{ __('Withdraw') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('transfer')" :active="request()->routeIs('transfer') || request()->routeIs('transfer.save')">
+                        {{ __('Transfer') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('statement')" :active="request()->routeIs('statement')">
+                        {{ __('Statement') }}
+                    </x-nav-link>
                 </div>
             </div>
 
